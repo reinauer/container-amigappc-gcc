@@ -1,0 +1,4 @@
+.mac-build/
+.extra
+*.lha
+*.log
