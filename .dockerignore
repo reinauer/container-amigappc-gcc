@@ -1,5 +1,6 @@
 .git
 .mac-build
+.linux-build
 .extra
 *.lha
 *.log

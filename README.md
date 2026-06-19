@@ -60,3 +60,31 @@ Useful options:
 `--sdk-archive` is useful when you already have a local AmigaOS SDK archive.
 The archive is staged into the ADTools build tree and reused by the patched
 download rule.
+
+## Linux Build
+
+```sh
+./build_linux.sh
+```
+
+The Linux script follows the container build path, installs/checks Ubuntu
+dependencies, builds `lha`, and installs the compiler into `/opt/amiga-ppc` by
+default.
+
+Useful options:
+
+```sh
+./build_linux.sh --prefix "$HOME/opt/amiga-ppc"
+./build_linux.sh --sdk-version 54.16
+./build_linux.sh --sdk-url "https://example.invalid/SDK_54.16.lha"
+./build_linux.sh --sdk-archive "$HOME/Downloads/SDK_54.16.lha"
+```
+
+## Docker Hub Update
+
+```sh
+./update_docker.sh
+```
+
+This builds and pushes `stefanreinauer/amigappc-gcc:gcc-v8.4.0`, a dated
+`gcc-v8.4.0-YYYYMMDD` tag, and `latest`.
