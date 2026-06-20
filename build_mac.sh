@@ -9,7 +9,7 @@ ADTOOLS_BINUTILS_BRANCH="2.23.2"
 SDK_VERSION="54.16"
 SDK_URL="${SDK_URL:-}"
 SDK_ARCHIVE=""
-PREFIX="/opt/adtools"
+PREFIX="/opt/amiga-ppc"
 WORKDIR="${SCRIPT_DIR}/.mac-build"
 JOBS=""
 INSTALL_BREW=1
@@ -52,11 +52,11 @@ Defaults:
   ADTools GCC branch:      8
   ADTools binutils branch: 2.23.2
   SDK version:             54.16
-  install prefix:          /opt/adtools
+  install prefix:          /opt/amiga-ppc
   source workdir:          ./.mac-build
 
 Options:
-  --prefix DIR             Install prefix (default: /opt/adtools)
+  --prefix DIR             Install prefix (default: /opt/amiga-ppc)
   --workdir DIR            Build workspace (default: ./.mac-build)
   --jobs N                 Parallel make jobs (default: macOS CPU count)
   --repo URL               ADTools repository URL
@@ -75,7 +75,7 @@ Options:
 
 Examples:
   ./build_mac.sh
-  ./build_mac.sh --prefix "$HOME/opt/adtools"
+  ./build_mac.sh --prefix "$HOME/opt/amiga-ppc"
   ./build_mac.sh --sdk-archive "$HOME/Downloads/SDK_54.16.lha"
   ./build_mac.sh --gcc-branch 8 --binutils-branch 2.23.2
 EOF

@@ -45,12 +45,12 @@ docker run --rm -v "$PWD:/work" -w /work amigappc-gcc \
 ```
 
 The macOS script installs Homebrew dependencies, builds `lha` from source, and
-installs the ADTools cross compiler into `/opt/adtools` by default.
+installs the ADTools cross compiler into `/opt/amiga-ppc` by default.
 
 Useful options:
 
 ```sh
-./build_mac.sh --prefix "$HOME/opt/adtools"
+./build_mac.sh --prefix "$HOME/opt/amiga-ppc"
 ./build_mac.sh --sdk-version 54.16
 ./build_mac.sh --sdk-url "https://example.invalid/SDK_54.16.lha"
 ./build_mac.sh --sdk-archive "$HOME/Downloads/SDK_54.16.lha"
